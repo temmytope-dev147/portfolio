@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quadri Temmytope | Full Stack Developer</title>
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='20' fill='%23e63946'/%3E%3Ctext x='50' y='68' font-size='60' font-family='Arial, sans-serif' font-weight='bold' fill='white' text-anchor='middle'%3EQ%3C/text%3E%3C/svg%3E">
+
+    <meta name="description" content="Quadri Temmytope — Full Stack Developer based in Lagos, Nigeria. Portfolio showcasing web, app, and backend work." />
+    <meta property="og:title" content="Quadri Temmytope | Full Stack Developer" />
+    <meta property="og:description" content="Full Stack Developer based in Lagos — web & mobile developer." />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://temmytope-dev147.github.io/portfolio" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- =================== LOADING SCREEN =================== -->
+    <div id="loading">
+        <div class="loader-dots">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
+
+    <!-- =================== SCROLL TO TOP =================== -->
+    <button id="scrollTop" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- =================== CUSTOM CURSOR =================== -->
+    <div class="cursor-dot" id="cursorDot"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- =================== MOBILE MENU =================== -->
+    <div class="mobile-menu" id="mobileMenu" aria-hidden="true" role="menu">
+        <a href="#header" onclick="closeMobile()">Home</a>
+        <a href="#about" onclick="closeMobile()">About</a>
+        <a href="#services" onclick="closeMobile()">Services</a>
+        <a href="#portfolio" onclick="closeMobile()">Portfolio</a>
+        <a href="#contact" onclick="closeMobile()">Contact</a>
+    </div>
+
+    <!-- =================== NAVIGATION =================== -->
+    <nav id="navbar" role="navigation">
+        <a href="#header" class="logo">Q<span>.</span>Dev</a>
+        <ul class="nav-links">
+            <li><a href="#header"    class="nav-link active">Home</a></li>
+            <li><a href="#about"     class="nav-link">About</a></li>
+            <li><a href="#services"  class="nav-link">Services</a></li>
+            <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+            <li><a href="#contact"   class="nav-link">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger" onclick="toggleMobile()" aria-controls="mobileMenu" aria-expanded="false" role="button" tabindex="0">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- =================== HERO =================== -->
+    <section id="header">
+        <div class="hero-orb"></div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-tag">
+                    <span class="tag-dot"></span> Available for projects
+                </div>
+                <h1 class="hero-title">
+                    Hello, I'm<br>
+                    <span class="accent" id="typed-text"></span>
+                </h1>
+                <p class="hero-sub">
+                    Full Stack Developer based in Lagos, Nigeria — crafting elegant web &amp; mobile experiences that scale globally.
+                </p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i> Hire Me
+                    </a>
+                    <a href="NuruNewCVR.pdf" download class="btn btn-outline">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" data-tooltip="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub" data-tooltip="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/Reddit_silver00" target="_blank" rel="noopener noreferrer" aria-label="Twitter" data-tooltip="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram" data-tooltip="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-hint">
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- =================== ABOUT =================== -->
+    <section id="about">
+        <div class="container">
+            <div class="about-grid">
+
+                <!-- Image -->
+                <div class="about-img-wrap reveal">
+                    <img src="Images/aport.jpg" alt="Quadri Temmytope" loading="lazy">
+                    <div class="img-badge">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack</span>
+                    </div>
+                </div>
+
+                <!-- Text -->
+                <div class="about-text reveal">
+                    <div class="section-header">
+                        <span class="section-label">Who I am</span>
+                        <h2 class="section-title">About Me</h2>
+                    </div>
+                    <p>
+                        I am a passionate Full-Stack Software Developer based in Lagos, Nigeria, dedicated to building modern, scalable, and user-focused web and desktop applications that solve real business challenges.<br>With strong proficiency in HTML, CSS, JavaScript, VB.NET, Python, SQL, and C#, I develop responsive websites, enterprise applications, database-driven systems, automation tools, and custom business solutions tailored to each client's unique needs<br>
+                    </p>
+
+                    <!-- Skill Bars -->
+                    <div class="skills">
+                        <div class="skill-row">
+                            <div class="skill-meta"><span>HTML / CSS</span><span>95%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-meta"><span>JavaScript</span><span>85%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="85%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-meta"><span>Node.js</span><span>80%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="80%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-meta"><span>Flutter / Dart</span><span>75%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="75%"></div></div>
+                        </div>
+                        <div class="skill-row">
+                            <div class="skill-meta"><span>Python</span><span>78%</span></div>
+                            <div class="skill-track"><div class="skill-fill" data-width="78%"></div></div>
+                        </div>
+                    </div>
+
+                    <!-- Tabs -->
+                    <div class="tabs-bar">
+                        <button class="tab-btn active" data-tab="skills">Skills</button>
+                        <button class="tab-btn" data-tab="experience">Experience</button>
+                        <button class="tab-btn" data-tab="education">Education</button>
+                    </div>
+
+                    <div class="tab-panel active" id="tab-skills">
+                        <ul>
+                            <li><strong>UI/UX Design</strong><span>Designing intuitive Web &amp; App Interfaces</span></li>
+                            <li><strong>Web Development</strong><span>Full Stack Web Applications</span></li>
+                            <li><strong>App Development</strong><span>Building Android/iOS apps with Flutter</span></li>
+                            <li><strong>Backend Development</strong><span>Node.js, Python, React, and .NET solutions</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="tab-experience">
+                        <ul>
+                            <li><strong>2023 – Present</strong><span>Freelance Full Stack Developer</span></li>
+                            <li><strong>2023</strong><span>Instructor — Highspace Computer Training School</span></li>
+                            <li><strong>2018 – 2022</strong><span>IT Support — Crescent University Abeokuta</span></li>
+                            <li><strong>2018 – 2019</strong><span>Trainee — Dataskills Training Institute</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-panel" id="tab-education">
+                        <ul>
+                            <li><strong>2022</strong><span>BSc Computer Science — Crescent University</span></li>
+                            <li><strong>2023</strong><span>Advanced Web Development — Highspace Training School</span></li>
+                            <li><strong>2018</strong><span>Diploma in Software Development — Dataskills Institute</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== SERVICES =================== -->
+    <section id="services">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:520px; margin:0 auto 64px;">
+                <span class="section-label">What I offer</span>
+                <h2 class="section-title">My Services</h2>
+            </div>
+            <div class="services-grid">
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-pen-nib"></i></div>
+                    <h3>Web Design</h3>
+                    <p>Beautiful, pixel-perfect websites with modern UI/UX principles that engage visitors and drive measurable conversions.</p>
+                    <a href="#contact" class="service-link">Start a project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-code"></i></div>
+                    <h3>Web Development</h3>
+                    <p>Robust full-stack applications using JavaScript, Node.js, Python, and .NET frameworks — built to scale.</p>
+                    <a href="#contact" class="service-link">Start a project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <div class="service-card reveal">
+                    <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+                    <h3>App Development</h3>
+                    <p>Cross-platform mobile apps for Android and iOS using Flutter and Dart — one codebase, consistent performance.</p>
+                    <a href="#contact" class="service-link">Start a project <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== PORTFOLIO =================== -->
+    <section id="portfolio">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:520px; margin:0 auto 64px;">
+                <span class="section-label">Selected work</span>
+                <h2 class="section-title">My Work</h2>
+            </div>
+
+            <!-- Insurance Systems -->
+            <div class="projects-section reveal">
+                <h2 class="projects-section-title">Insurance &amp; Financial Systems</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Goldlink Insurance Portal</h3>
+                        <p>Complete insurance management system with full policy administration.</p>
+                        <a href="http://goldlink.gibsonline.com/webroot/web/modules/welcome/" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-chart-bar"></i></div>
+                        <h3>SA Gibson Analytics</h3>
+                        <p>Advanced analytics dashboard for insurance data visualization.</p>
+                        <a href="http://sa.newgibsonline.com/webroot/web/modules/welcome/login.aspx" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Elsaquest Broker Portal</h3>
+                        <p>Insurance brokerage platform with full client management tools.</p>
+                        <a href="http://elsaquest.gibsonline.com/webroot/web/modules/welcome/login.aspx" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Systems -->
+            <div class="projects-section reveal">
+                <h2 class="projects-section-title">Recent Projects</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-clipboard-list"></i></div>
+                        <h3>Sterling Employment Form</h3>
+                        <p>Online employment application platform with structured form submission.</p>
+                        <a href="https://sterling-employmentform.onrender.com" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-robot"></i></div>
+                        <h3>San Chatbot</h3>
+                        <p>AI-powered chatbot application for conversational interactions.</p>
+                        <a href="https://sanchatbot.onrender.com/" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Additional Systems -->
+            <div class="projects-section reveal">
+                <h2 class="projects-section-title">Additional Systems</h2>
+                <div class="project-cards">
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-store"></i></div>
+                        <h3>Prestige Superstores</h3>
+                        <p>Full-featured e-commerce platform for a retail business.</p>
+                        <a href="https://prestigesuperstores.com.ng/" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-user-tie"></i></div>
+                        <h3>Portalife Agent System</h3>
+                        <p>Insurance agent management and commission tracking system.</p>
+                        <a href="https://portalife.newgibsonline.com/agent/" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    <div class="project-card">
+                        <div class="project-card-icon"><i class="fas fa-file-contract"></i></div>
+                        <h3>Staco Insurance Portal</h3>
+                        <p>Complete solution with customer and policy management.</p>
+                        <a href="http://staco.gibsonline.com/webroot/web/modules/welcome/default.aspx" target="_blank" rel="noopener noreferrer">
+                            View project <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Testimonials -->
+            <div class="testimonials-wrap reveal">
+                <h2>Client Testimonials</h2>
+                <div class="testimonial-track" id="testimonialTrack">
+                    <div class="testimonial-item active">
+                        <blockquote>
+                            "Quadri delivered our insurance platform ahead of schedule with excellent attention to detail. Highly recommended for any serious project!"
+                        </blockquote>
+                        <div class="t-author">
+                            <div class="t-author-avatar" aria-hidden="true">GI</div>
+                            <div>
+                                <strong>Grace Ikpetesi</strong>
+                                <span>HOD, IT — Goldlink Insurance NG</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonial-item">
+                        <blockquote>
+                            "The IBrokeage app developed by Quadri exceeded our expectations in both design and functionality. A true professional."
+                        </blockquote>
+                        <div class="t-author">
+                            <div class="t-author-avatar" aria-hidden="true">OP</div>
+                            <div>
+                                <strong>Offzor Paulinus</strong>
+                                <span>Founder — Elsaquest Brokers</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="t-nav">
+                    <button class="t-btn t-prev" aria-label="Previous"><i class="fas fa-chevron-left"></i></button>
+                    <div class="t-dots" id="tDots"></div>
+                    <button class="t-btn t-next" aria-label="Next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =================== CONTACT =================== -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-header reveal" style="text-align:center; max-width:520px; margin:0 auto 64px;">
+                <span class="section-label">Get in touch</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+            <div class="contact-grid">
+
+                <!-- Info -->
+                <div class="contact-info reveal">
+                    <p class="contact-intro">Have a project in mind? Let's build something great together. Feel free to reach out through any channel below.</p>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-envelope"></i></div>
+                        <div class="contact-item-text">
+                            <strong>Email</strong>
+                            <span>quadri904@gmail.com</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-phone"></i></div>
+                        <div class="contact-item-text">
+                            <strong>Phone</strong>
+                            <span>+234 912 969 7092</span>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+                        <div class="contact-item-text">
+                            <strong>Location</strong>
+                            <span>Lagos, Nigeria</span>
+                        </div>
+                    </div>
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://x.com/Reddit_silver00" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                    <a href="NuruNewCVR.pdf" download class="btn btn-outline" style="margin-top:28px; display:inline-flex;">
+                        <i class="fas fa-download"></i> Download CV
+                    </a>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-wrap reveal">
+                    <form class="contact-form" id="contactForm" novalidate data-form="demo">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <input type="text" name="name" id="inputName" placeholder=" " required>
+                                <label for="inputName">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="inputEmail" placeholder=" " required>
+                                <label for="inputEmail">Your Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" id="inputSubject" placeholder=" ">
+                            <label for="inputSubject">Subject</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" id="inputMessage" placeholder=" " required></textarea>
+                            <label for="inputMessage">Your Message</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-full">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+                        <div class="form-status" id="formStatus"></div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- =================== FOOTER =================== -->
+    <footer>
+        <div class="footer-inner">
+            <a href="#header" class="logo">Q<span>.</span>Dev</a>
+            <p>© <span id="year"></span> Quadri Temmytope. All rights reserved.</p>
+            <p class="footer-love">Built with <span class="heart">♥</span> in Lagos</p>
+        </div>
+    </footer>
+
+    <!-- =================== SCRIPTS =================== -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+    // Hide loading screen when page is ready
+    window.addEventListener('load', function() {
+        document.getElementById('loading').classList.add('hidden');
+    });
+    </script>
+    <script src="main.js"></script>
+
+</body>
+</html>
